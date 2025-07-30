@@ -9,25 +9,45 @@ import SwiftUI
 
 struct ChallengesBasicView: View {
     var body: some View {
-        VStack (spacing: 90){
+        VStack (spacing: 30){
             
             Text("Challenges for Today")
                 .font(.system(size: 30))
                 .fontWeight(.black)
             
+            Text("Balloon Car")
+                .multilineTextAlignment(.leading)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: -100, trailing: 10))
             
-            Text("Balloon Car + challenge image + Make a balloon car using simple materials")
-            Image("diy robot hands")
+            Image("balloon car")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(15)
-            Text("invisible Ink + challenge image + Make invisible to send secret messages")
+                .scaledToFit()
+                .frame(width: 200.0, height: 100.0)
             
-            Text("DIY Robot Hands + challenge image + Make fun diy robot hands")
+            Text("invisible Ink")
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: -100, trailing: 10))
+            
+            Image("invisable ink")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200.0, height: 100.0)
+            
+            Text("DIY Robot Hands")
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: -100, trailing: 10))
+            
+            Image("diy robot hands")
+                 .resizable()
+                 .scaledToFit()
+                 .frame(width: 200.0, height: 100.0)
             Spacer()
-            Spacer()
+            
+            
+            
+            
+            
             
         }
+        .padding()
     }
 }
 
