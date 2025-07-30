@@ -99,7 +99,7 @@ struct ChallengeOneView: View {
                     .padding()
                 
                 //back to home page with other challenges
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: ChallengesBasicView()) {
                     Text("Back to home page")
                         .multilineTextAlignment(.center)
                 }
