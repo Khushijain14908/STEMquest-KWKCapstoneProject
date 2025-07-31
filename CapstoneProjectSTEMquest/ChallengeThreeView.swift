@@ -30,7 +30,7 @@ struct ChallengeThreeView: View {
                     Text("Materials")
                         .font(.title2)
                         .fontWeight(.semibold)
-                    Text("Modeling clay (reusable, air-dry, or oven-dry) \nDrinking straws\nString\nTweezers\nSmall rubber bands\nPaper clips\nScissors\nNeedle\nCardboard tub\nAssorted objects to grasp.")
+                    Text("- Modeling clay (reusable, air-dry, or oven-dry) \n- Drinking straws\n- String\n- Tweezers\n- Small rubber bands\n- Paper clips\n- Scissors\n- Needle\n- Cardboard tub\n- Assorted objects to grasp.")
                         .font(.body)
                         .multilineTextAlignment(.leading)
                     
@@ -134,6 +134,7 @@ struct ChallengeThreeView: View {
                         }
                         
                         Text("Optional: try making a more complicated finger. This picture shows a finger with three joints, each controlled independently by a different string.")
+                            .fontWeight(.light)
                         Image("3.12")
                             .resizable()
                             .frame(alignment: .center)
