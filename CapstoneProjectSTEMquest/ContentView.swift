@@ -41,10 +41,27 @@ struct ContentView: View {
                 Button("Login") {
                     isLoggedIn = true
                 }
-               
+                
+                Button(action: {
+                    showSignUp = true
+                }) {
+                Text("Don't have an account?\nCreate an account")
+                        .font(.footnote)
+                        .foregroundColor(.blue)
+                        .multilineTextAlignment(.center)
+                        .padding()
+    
+                }
+                    Spacer()
+            
                     
                 }
+            .padding()
+            .fullScreenCover(isPresented: $showSignUp) {
                 
+            }
+            .fullScreenCover(isPresented: $isLoggedIn, content: {
+            })
             }
         .padding()
         Spacer()
