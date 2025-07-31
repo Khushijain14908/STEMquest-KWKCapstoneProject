@@ -38,7 +38,7 @@ struct ChallengesBasicView: View {
                     .frame(width: 200.0, height: 100.0)
                 
                 NavigationLink(destination: ChallengeTwoView()){
-                    Text("Invisable Ink")
+                    Text("Invisible Ink")
                         .font(.system(size: 20))
                         .fontWeight(.black)
                         .multilineTextAlignment(.leading)
