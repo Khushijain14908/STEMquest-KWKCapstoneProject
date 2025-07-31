@@ -37,10 +37,14 @@ struct ChallengeOneView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 60)
+                        .foregroundColor(Color("Color1"))
+
                     Text("Total Project Time: 20-30 minutes")
-                        .font(.body)
                         .multilineTextAlignment(.leading)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+
                     Text("Key Concepts: Newton’s laws of motion, kinetic energy, potential energy")
+                        .font(.custom("AvenirNext-Regular", size: 18))
                     
                     //materials below
                     Text("Materials")
@@ -50,8 +54,11 @@ struct ChallengeOneView: View {
                     Text("- Plastic bottles\n- Plastic bottle caps (4)\n- Flexible straws (3)\n- Wooden skewers (2)\n- Balloon\n- Rubber band\n- Tape\n- Scissors")
                         .font(.body)
                         .multilineTextAlignment(.leading)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+
                     Text("Note: other materials can be substituted, like a small cardboard box instead of a plastic bottle.")
                         .fontWeight(.light)
+                        .font(.custom("AvenirNext-Regular", size: 18))
                     
                     //instructions below
                     Text("Instructions")
