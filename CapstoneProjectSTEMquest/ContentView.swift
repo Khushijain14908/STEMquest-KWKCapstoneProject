@@ -18,7 +18,7 @@ struct ContentView: View {
                 VStack(spacing: 20) {
                     Text("STEMquest")
                         .font(.largeTitle)
-                        .fontWeight(.bold)
+                        .fontWeight(.black)
                         .padding(.top, 40)
                     
                     Image(systemName: "person.crop.circle.fill")
@@ -31,15 +31,21 @@ struct ContentView: View {
                         .background(Color(.systemGray6))
                         .cornerRadius(8)
                         .autocapitalization(.none)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .font(.system(size:24, weight: .semibold, design: .rounded))
                     
                     SecureField("Password", text: $password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(8)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .font(.system(size:24, weight: .semibold, design: .rounded))
                     
                     Button("Login") {
                         isLoggedIn = true
                     }
+                    .font(.custom("AvenirNext-Regular", size: 18))
+                    .font(.system(size:24, weight: .semibold, design: .rounded))
                     
                     NavigationLink(destination: SignUpView()) {
 
@@ -48,6 +54,8 @@ struct ContentView: View {
                             .foregroundColor(.blue)
                             .multilineTextAlignment(.center)
                             .padding()
+                            .font(.custom("AvenirNext-Regular", size: 18))
+                            .font(.system(size:24, weight: .semibold, design: .rounded))
                         
                     }
                     Spacer()
