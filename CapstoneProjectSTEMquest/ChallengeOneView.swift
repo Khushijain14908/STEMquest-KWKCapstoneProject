@@ -37,7 +37,7 @@ struct ChallengeOneView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 60)
-                        .foregroundColor(Color("Color1"))
+                        .foregroundColor(Color("Color5"))
 
                     Text("Total Project Time: 20-30 minutes")
                         .multilineTextAlignment(.leading)
@@ -51,9 +51,12 @@ struct ChallengeOneView: View {
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.horizontal, 135)
+
                     Text("- Plastic bottles\n- Plastic bottle caps (4)\n- Flexible straws (3)\n- Wooden skewers (2)\n- Balloon\n- Rubber band\n- Tape\n- Scissors")
                         .multilineTextAlignment(.leading)
                         .font(.custom("AvenirNext-Regular", size: 18))
+                        .foregroundColor(Color("Color5"))
+
 
                     Text("Note: other materials can be substituted, like a small cardboard box instead of a plastic bottle.")
                         .font(.custom("AvenirNext-Italic", size: 18))
