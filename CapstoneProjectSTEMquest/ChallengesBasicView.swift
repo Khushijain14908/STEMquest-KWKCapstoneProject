@@ -11,8 +11,8 @@ struct ChallengesBasicView: View {
     var body: some View {
         NavigationStack {
             ZStack{
-                Color(.purple)
-                    .ignoresSafeArea()
+                //Color(.systemMint)
+                    //.ignoresSafeArea()
                 
                 VStack (spacing: 10){
                     
@@ -28,9 +28,10 @@ struct ChallengesBasicView: View {
                             .padding(.horizontal, 10)
                     }
                     
-                    Text("Make a Balloon Car! - Build a balloon-powered car from recycled materials in this fun activity! Make two to race them!")
-                        .font(.system(size: 17))
-                        .fontWeight(.bold)
+                    Text("Make a Balloon Car! Build a balloon-powered car from recycled materials in this fun activity! Make two to race them!")
+                        .foregroundColor(.black)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .font(.system(size:24, weight: .semibold, design: .rounded))
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
                         .fixedSize(horizontal: false, vertical: true)
@@ -49,8 +50,8 @@ struct ChallengesBasicView: View {
                     }
                     
                     Text("Have you ever wanted to send your friend a secret message that no-one else can read? Then you might know of invisable ink a type of ink that doesn't show on paper until you put a special treatment on it.")
-                        .font(.system(size: 17))
-                        .fontWeight(.bold)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .font(.system(size:24, weight: .semibold, design: .rounded))
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
                         .fixedSize(horizontal: false, vertical: true)
@@ -69,9 +70,8 @@ struct ChallengesBasicView: View {
                     }
                     
                     Text("Build these simple diy robot hands and try to write or pick things up ")
-                        .padding(.horizontal, 10)
-                        .font(.system(size: 20))
-                        .fontWeight(.bold)
+                        .font(.custom("AvenirNext-Regular", size: 18))
+                        .font(.system(size:24, weight: .semibold, design: .rounded))
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
                         .fixedSize(horizontal: false, vertical: true)
