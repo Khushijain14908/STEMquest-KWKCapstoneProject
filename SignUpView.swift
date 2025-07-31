@@ -38,7 +38,10 @@ struct SignUpView: View {
             Button("Create Account") {
                 dismiss()
             }
+    
         }
+        .padding()
+        .navigationBarBackButtonHidden(false)
     }
 }
         
