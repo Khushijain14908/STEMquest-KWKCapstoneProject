@@ -29,7 +29,6 @@ struct ChallengesBasicView: View {
                     }
                     
                     Text("Make a Balloon Car! Build a balloon-powered car from recycled materials in this fun activity! Make two to race them!")
-                        .foregroundColor(.black)
                         .font(.custom("AvenirNext-Regular", size: 18))
                         .font(.system(size:24, weight: .semibold, design: .rounded))
                         .multilineTextAlignment(.leading)
