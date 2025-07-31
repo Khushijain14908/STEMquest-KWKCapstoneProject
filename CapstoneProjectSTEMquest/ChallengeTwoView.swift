@@ -64,8 +64,9 @@ struct ChallengeTwoView: View {
                         .fontWeight(.light)
                     Image("2.3")
                         .resizable()
+                        .padding(.leading, 25)
                         .scaledToFit()
-                        .frame(width: 300.0, height: 200.0)
+                        .frame(width: 350.0, height: 200.0)
                     
                     //instructions below
                     Text("Instructions")
@@ -76,6 +77,7 @@ struct ChallengeTwoView: View {
 
                     Text("Dip a Q-tip into the baking soda solution from your second cup. Use the damp Q-tip to draw a letter, symbol, or write a secret message on the white cardstock paper. Re-wet your Q-tip if necessary. Be careful to not soak the paper too much.")
                     Image("2.4")
+                        .padding(.leading)
                     
                     
                     Text("How does the paper look after you have written on it? Can you see your message?")
@@ -87,6 +89,7 @@ struct ChallengeTwoView: View {
                     
                     Text("4. Dip a Q-tip or brush into the prepared turmeric solution. Paint the whole paper with the turmeric solution being sure to cover the secret letters you wrote with your baking soda Q-tip.")
                     Image("2.5")
+                        .padding(.leading)
                     Text("What do you notice? Can you explain your results?")
                         .fontWeight(.light)
                     
@@ -99,11 +102,6 @@ struct ChallengeTwoView: View {
                     Text("Note that this video demonstrates two seperate methods of doing this activity. The written instructions above are based on the second method, which in the video starts at timestamp 1:00.")
                         .fontWeight(.light)
                     
-                    //back to home page with other challenges
-                    NavigationLink(destination: ChallengesBasicView()) {
-                        Text("Back to home page")
-                            .multilineTextAlignment(.center)
-                    }
                 }
                 .padding()
             }

@@ -42,6 +42,7 @@ struct ChallengeThreeView: View {
                         Text("Instructions")
                             .font(.title2)
                             .fontWeight(.semibold)
+                            .padding(.horizontal, 125)
                         
                         HStack{
                             Text("1. Cut a small triangular notch in a straw, about halfway along its length. The straw will be a finger and the notch will be a joint.")
@@ -147,11 +148,6 @@ struct ChallengeThreeView: View {
                             .padding()
                         
                         
-                    }
-                    //back to home page with other challenges
-                    NavigationLink(destination: ChallengesBasicView()) {
-                        Text("Back to home page")
-                            .multilineTextAlignment(.center)
                     }
                 }
                 .padding()
