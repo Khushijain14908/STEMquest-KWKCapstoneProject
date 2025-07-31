@@ -56,19 +56,13 @@ struct ChallengesBasicView: View {
                     .scaledToFit()
                     .frame(width: 200.0, height: 100.0)
                 
-                Text("DIY Robot Hands")
-                    .padding(.horizontal, 10)
-                    .font(.system(size: 20))
-                    .fontWeight(.black)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 10)
-                
-                
-                
-                
-                
-                
-                
+                NavigationLink(destination: ChallengeThreeView()){
+                    Text("DIY Robot Hands")
+                        .font(.system(size: 20))
+                        .fontWeight(.black)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal, 10)
+                }
                 
                 Text("Build these simple diy robot hands and try to write or pick things up ")
                     .padding(.horizontal, 10)
@@ -77,12 +71,6 @@ struct ChallengesBasicView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 10)
                     .fixedSize(horizontal: false, vertical: true)
-                
-                
-                
-                
-                
-                
                 
                 Image("diy robot hands")
                     .resizable()
