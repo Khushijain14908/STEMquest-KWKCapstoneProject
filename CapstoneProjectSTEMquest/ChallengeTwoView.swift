@@ -20,8 +20,10 @@ struct ChallengeTwoView: View {
                         .multilineTextAlignment(.center)
                     Text("Total Project Time: 45-60 minutes")
                         .font(.body)
+                        .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
                         .multilineTextAlignment(.leading)
-                        .padding(EdgeInsets(top: 0, leading: -100, bottom: 0, trailing: 0))
+                        .padding(.horizontal, 10)
+                        //.padding(EdgeInsets(top: 0, leading: -100, bottom: 0, trailing: 0))
                     Text("Key Concepts: Chemistry, acid, base, chemical \nreaction")
                     
                     //materials below
