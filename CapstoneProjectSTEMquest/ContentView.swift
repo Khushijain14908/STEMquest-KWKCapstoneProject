@@ -20,6 +20,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.black)
                         .padding(.top, 40)
+                        .foregroundColor(Color("Color1"))
                     
                     Image(systemName: "person.crop.circle.fill")
                         .resizable()
@@ -33,30 +34,38 @@ struct ContentView: View {
                         .autocapitalization(.none)
                         .font(.custom("AvenirNext-Regular", size: 18))
                         .font(.system(size:24, weight: .semibold, design: .rounded))
+                        .foregroundColor(Color("Color1"))
                     
                     SecureField("Password", text: $password)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(8)
                         .font(.custom("AvenirNext-Regular", size: 18))
-                        .font(.system(size:24, weight: .semibold, design: .rounded))
+                        .font(.system(size:24, weight: .bold, design: .rounded))
+                        .foregroundColor(Color("Color1"))
                     
-                    Button("Login") {
-                        isLoggedIn = true
-                    }
+                        
+                        NavigationLink(destination: ChallengesBasicView()) {
+                            
+                            Text("Login")
+                            
+                        }
+                        
                     .font(.custom("AvenirNext-Regular", size: 18))
-                    .font(.system(size:24, weight: .semibold, design: .rounded))
+                    .font(.system(size:24, weight: .bold, design: .rounded))
+                    .foregroundColor(Color("Color1"))
                     
                     NavigationLink(destination: SignUpView()) {
-
+                        
                         Text("Don't have an account?\nCreate an account")
                             .font(.footnote)
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color("Color2"))
                             .multilineTextAlignment(.center)
                             .padding()
                             .font(.custom("AvenirNext-Regular", size: 18))
                             .font(.system(size:24, weight: .semibold, design: .rounded))
                         
+                            
                     }
                     Spacer()
                     
