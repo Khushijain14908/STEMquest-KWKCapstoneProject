@@ -12,11 +12,9 @@ struct ContentView: View {
     @State private var username = ""
     @State private var password = ""
     @State private var isLoggedIn = false
-    @State private var showSignUp = false
     
     var body: some View {
         NavigationStack {
-            ScrollView{
                 VStack(spacing: 20) {
                     Text("STEMquest")
                         .font(.largeTitle)
@@ -43,9 +41,8 @@ struct ContentView: View {
                         isLoggedIn = true
                     }
                     
-                    Button(action: {
-                        showSignUp = true
-                    }) {
+                    NavigationLink(destination: SignUpView()) {
+
                         Text("Don't have an account?\nCreate an account")
                             .font(.footnote)
                             .foregroundColor(.blue)
@@ -58,10 +55,6 @@ struct ContentView: View {
                     
                 }
                 .padding()
-                .fullScreenCover(isPresented: $showSignUp) {
-                    SignUpView()
-                    
-                }
                 .fullScreenCover(isPresented: $isLoggedIn, content: {
                 })
             }
@@ -69,7 +62,6 @@ struct ContentView: View {
             Spacer()
         }
     }
-}
 #Preview {
     ContentView()
 }
