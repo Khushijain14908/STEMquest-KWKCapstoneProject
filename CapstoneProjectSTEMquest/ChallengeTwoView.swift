@@ -16,9 +16,9 @@ struct ChallengeTwoView: View {
                     //basic info
                     Text("--- INVISIBLE INK ---")
                         .font(.custom("American Typewriter", fixedSize: 34))
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal,20)
+                        .padding(.horizontal,5)
                         .foregroundColor(Color("Color1"))
                     Text("Total Project Time: 45-60 minutes")
                         .font(.custom("AvenirNext-Regular", size: 18))
@@ -30,7 +30,7 @@ struct ChallengeTwoView: View {
                     //materials below
                     Text("Materials")
                         .font(.custom("American Typewriter", fixedSize: 24))
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                         .padding(.horizontal, 125)
                         .foregroundColor(Color("Color1"))
 
@@ -46,7 +46,7 @@ struct ChallengeTwoView: View {
                     //prep work instructions below
                     Text("Prep Work")
                         .font(.custom("American Typewriter", fixedSize: 24))
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                         .padding(.horizontal, 125)
                         .foregroundColor(Color("Color1"))
                     
@@ -80,7 +80,7 @@ struct ChallengeTwoView: View {
                     //instructions below
                     Text("Instructions")
                         .font(.custom("American Typewriter", fixedSize: 24))
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                         .padding(.horizontal, 110)
                         .foregroundColor(Color("Color1"))
 

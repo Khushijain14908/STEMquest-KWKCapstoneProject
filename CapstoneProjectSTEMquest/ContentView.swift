@@ -26,11 +26,11 @@ struct ContentView: View {
                 Spacer()
                 Text("STEMquest")
                 
-                    .font(.largeTitle)
-                    .fontWeight(.black)
                     .padding(.bottom, 20)
                     .foregroundColor(Color("Color1"))
-                    .font(.custom("American Typewriter", fixedSize: 34))
+                    .font(.custom("American Typewriter", fixedSize: 45)
+                        .weight(.bold)
+                    )
                 VStack(spacing: 20) {
                     Image(systemName: "person.crop.circle.fill")
                         .resizable()

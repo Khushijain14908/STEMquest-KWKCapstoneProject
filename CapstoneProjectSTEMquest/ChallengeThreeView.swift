@@ -16,7 +16,7 @@ struct ChallengeThreeView: View {
                     //basic info
                     Text("--- ROBOT HAND ---")
                         .font(.custom("American Typewriter", fixedSize: 34))
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color("Color1"))
                     Text("Total Project Time: 20-30 minutes")
@@ -33,7 +33,7 @@ struct ChallengeThreeView: View {
                     //materials below
                     Text("Materials")
                         .font(.custom("American Typewriter", fixedSize: 24))
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                         .padding(.horizontal, 125)
                         .foregroundColor(Color("Color1"))
                     
@@ -50,8 +50,8 @@ struct ChallengeThreeView: View {
                     VStack(alignment: .leading, spacing: 20){
                         Text("Instructions")
                             .font(.custom("American Typewriter", fixedSize: 24))
-                            .fontWeight(.semibold)
-                            .padding(.horizontal, 110)
+                            .fontWeight(.bold)
+                            .padding(.horizontal, 105)
                             .foregroundColor(Color("Color1"))
                         
                         HStack{

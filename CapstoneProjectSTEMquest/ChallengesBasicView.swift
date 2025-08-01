@@ -18,7 +18,7 @@ struct ChallengesBasicView: View {
                     
                     Text("Challenges for Today")
                         .font(.custom("American Typewriter", fixedSize: 34)
-                            .weight(.semibold)
+                            .weight(.bold)
                         )
                     .foregroundColor(Color("Color1"))
 
@@ -26,7 +26,7 @@ struct ChallengesBasicView: View {
                         Text("Balloon Car")
                             .foregroundColor(Color("Color1"))
                             .font(.system(size: 20))
-                            .fontWeight(.black)
+                            .fontWeight(.bold)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 10)
                     }
@@ -48,7 +48,7 @@ struct ChallengesBasicView: View {
                         Text("Invisible Ink")
                             .foregroundColor(Color("Color1"))
                             .font(.system(size: 20))
-                            .fontWeight(.black)
+                            .fontWeight(.bold)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 10)
                     }
@@ -70,7 +70,7 @@ struct ChallengesBasicView: View {
                         Text("DIY Robot Hands")
                             .foregroundColor(Color("Color1"))
                             .font(.system(size: 20))
-                            .fontWeight(.black)
+                            .fontWeight(.bold)
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 10)
                     }
