@@ -55,24 +55,49 @@ struct ContentView: View {
                         .font(.system(size:24, weight: .bold, design: .rounded))
                         .foregroundColor(Color("Color1"))
                     
-                    
                     NavigationLink(destination: ChallengesBasicView()) {
-                        Button(action: {
-                            if !username.isEmpty && !password.isEmpty {
-                                isLoggedIn = true
-                            }
-                            
-                        }){
                             Text("Login")
                                 .frame(maxWidth: .infinity)
                                 .padding()
                                 .font(.custom("AvenirNext-Regular", size: 18))
-                                .font(.system(size:24, weight: .bold, design: .rounded))
+                                .font(.system(size: 24, weight: .bold, design: .rounded))
                                 .foregroundColor(Color("Color1"))
-                            
+                                .background(.ultraThinMaterial)
+                                .cornerRadius(20)
+                                .shadow(radius: 10)
+                                .padding(.horizontal, 30)
+                        }
+//                    NavigationLink(
+//                        destination: ChallengesBasicView(),
+//                        label: {
+//                            Button(action: {
+//                               isLoggedIn = true
+//                            }) {
+//                                Text("Login")
+//                                    .frame(maxWidth: .infinity)
+//                                    .padding()
+//                                    .font(.custom("AvenirNext-Regular", size: 18))
+//                                    .font(.system(size:24, weight: .bold, design: .rounded))
+//                                    .foregroundColor(Color("Color1"))
+//                            }
+//                        }
+//                    )
+//                    NavigationLink(destination: ChallengesBasicView(), label:  {
+//                        Button(action: {
+//                            isLoggedIn = true
+//                            }
+//                            
+//                        }){
+//                            Text("Login")
+//                                .frame(maxWidth: .infinity)
+//                                .padding()
+//                                .font(.custom("AvenirNext-Regular", size: 18))
+//                                .font(.system(size:24, weight: .bold, design: .rounded))
+//                                .foregroundColor(Color("Color1"))
+//                            )
                             NavigationLink(destination: SignUpView()) {
                                 
-                                Text("Don't have an account?\nCreate an account")
+                                Text("Create an account")
                                     .font(.footnote)
                                     .foregroundColor(Color("Color1"))
                                     .multilineTextAlignment(.center)
@@ -88,15 +113,15 @@ struct ContentView: View {
                         .padding(.horizontal, 30)
                     }
                     Spacer()
-                    
+                .frame(maxHeight: .infinity)
                     
                 }
 
             }
-            .frame(maxHeight: .infinity)
+//            .frame(maxHeight: .infinity)
         }
-    }
-}
+//    }
+//}
 #Preview {
     ContentView()
 }
