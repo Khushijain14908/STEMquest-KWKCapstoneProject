@@ -30,7 +30,7 @@ struct ContentView: View {
                     .fontWeight(.black)
                     .padding(.bottom, 20)
                     .foregroundColor(Color("Color1"))
-                    .font(.custom("AvenirNext-Bold", size: 40))
+                    .font(.custom("American Typewriter", fixedSize: 34))
                 VStack(spacing: 20) {
                     Image(systemName: "person.crop.circle.fill")
                         .resizable()
@@ -57,7 +57,12 @@ struct ContentView: View {
                     
                     
                     NavigationLink(destination: ChallengesBasicView()) {
-                    
+                        Button(action: {
+                            if !username.isEmpty && !password.isEmpty {
+                                isLoggedIn = true
+                            }
+                            
+                        }){
                             Text("Login")
                                 .frame(maxWidth: .infinity)
                                 .padding()
@@ -86,11 +91,12 @@ struct ContentView: View {
                     
                     
                 }
+
             }
             .frame(maxHeight: .infinity)
         }
     }
-
+}
 #Preview {
     ContentView()
 }
