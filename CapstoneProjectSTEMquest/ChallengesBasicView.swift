@@ -17,13 +17,12 @@ struct ChallengesBasicView: View {
                 VStack (spacing: 10){
                     
                     Text("Challenges for Today")
-                        .foregroundColor(Color("Color1"))
+                        .font(.custom("American Typewriter", fixedSize: 34)
+                            .weight(.semibold)
+                        )
+                    .foregroundColor(Color("Color1"))
 
-                        
-                        .font(.system(size: 30))
-                        .fontWeight(.black)
-                    
-                    NavigationLink(destination: ChallengeOneView()){
+                NavigationLink(destination: ChallengeOneView()){
                         Text("Balloon Car")
                             .foregroundColor(Color("Color1"))
                             .font(.system(size: 20))
