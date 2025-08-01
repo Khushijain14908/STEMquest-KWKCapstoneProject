@@ -26,6 +26,7 @@ struct SignUpView: View {
                     .fontWeight(.black)
                     .font(.custom("American Typewriter", fixedSize: 34))
                     .fontWeight(.semibold)
+                    .foregroundColor(Color("Color1"))
                 
                 Group {
                     TextField("Username", text: $username)
