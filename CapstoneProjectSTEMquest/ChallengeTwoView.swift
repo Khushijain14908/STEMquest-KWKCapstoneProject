@@ -14,11 +14,11 @@ struct ChallengeTwoView: View {
             ScrollView{
                 VStack(alignment: .leading, spacing: 20){
                     //basic info
-                    Text("~ INVISIBLE INK ~")
-                        .font(.title)
-                        .fontWeight(.bold)
+                    Text("--- INVISIBLE INK ---")
+                        .font(.custom("American Typewriter", fixedSize: 34))
+                        .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 65)
+                        .padding(.horizontal,20)
                         .foregroundColor(Color("Color1"))
                     Text("Total Project Time: 45-60 minutes")
                         .font(.custom("AvenirNext-Regular", size: 18))
@@ -29,10 +29,9 @@ struct ChallengeTwoView: View {
                     
                     //materials below
                     Text("Materials")
-                        .font(.title2)
+                        .font(.custom("American Typewriter", fixedSize: 24))
                         .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 140)
+                        .padding(.horizontal, 125)
                         .foregroundColor(Color("Color1"))
 
                     Text("- Baking soda\n- Water\n- Turmeric and rubbing alcohol OR concentrated grape or blueberry juice.")
@@ -46,10 +45,9 @@ struct ChallengeTwoView: View {
                     
                     //prep work instructions below
                     Text("Prep Work")
-                        .font(.title2)
+                        .font(.custom("American Typewriter", fixedSize: 24))
                         .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 135)
+                        .padding(.horizontal, 125)
                         .foregroundColor(Color("Color1"))
                     
                     Text("1. Squeeze the juice of half a lemon into a cup or small bowl.\n2. Add half a teaspoon of water to the lemon juice and mix it with a spoon.\n3. Mix 1 tablespoon of baking soda with one tablespoon of water in a second cup or bowl.")
@@ -81,10 +79,9 @@ struct ChallengeTwoView: View {
                     
                     //instructions below
                     Text("Instructions")
-                        .font(.title2)
+                        .font(.custom("American Typewriter", fixedSize: 24))
                         .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 125)
+                        .padding(.horizontal, 110)
                         .foregroundColor(Color("Color1"))
 
                     Text("Dip a Q-tip into the baking soda solution from your second cup. Use the damp Q-tip to draw a letter, symbol, or write a secret message on the white cardstock paper. Re-wet your Q-tip if necessary. Be careful to not soak the paper too much.")
