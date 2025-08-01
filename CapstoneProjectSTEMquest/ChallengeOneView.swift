@@ -32,11 +32,11 @@ struct ChallengeOneView: View {
             ScrollView{
                 VStack(alignment: .leading, spacing: 20){
                     //basic info
-                    Text("~ BALLOON CAR ~")
+                    Text("--- BALLOON CAR ---")
                         .font(.custom("American Typewriter", fixedSize: 34))
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 32)
+                        .padding(.horizontal, 23)
                         .foregroundColor(Color("Color1"))
 
                     Text("Total Project Time: 20-30 minutes")
