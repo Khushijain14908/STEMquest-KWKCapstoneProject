@@ -20,10 +20,12 @@ struct SignUpView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 15) {
+            VStack(spacing: 35) {
                 Text("Sign Up!")
                     .font(.title)
                     .fontWeight(.black)
+                    .font(.custom("American Typewriter", fixedSize: 34))
+                    .fontWeight(.semibold)
                 
                 Group {
                     TextField("Username", text: $username)
@@ -42,7 +44,7 @@ struct SignUpView: View {
                 
                 NavigationLink(destination: ChallengesBasicView()) {
                     
-                    Text("Create Account")
+                    Text("Create Account :)")
                 }
             }
         }
