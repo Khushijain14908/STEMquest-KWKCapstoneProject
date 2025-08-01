@@ -22,10 +22,8 @@ struct SignUpView: View {
         NavigationStack {
             VStack(spacing: 35) {
                 Text("Sign Up!")
-                    .font(.title)
-                    .fontWeight(.black)
                     .font(.custom("American Typewriter", fixedSize: 34))
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                     .foregroundColor(Color("Color1"))
                 
                 Group {
