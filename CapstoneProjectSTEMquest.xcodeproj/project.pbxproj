@@ -6,12 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		30F8723B2E3BEA20006687F4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F8723A2E3BEA20006687F4 /* SignUpView.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		30F8723A2E3BEA20006687F4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BDAA3BC42E394C9E00494C8B /* CapstoneProjectSTEMquest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProjectSTEMquest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,7 +32,6 @@
 		BDAA3BBB2E394C9E00494C8B = {
 			isa = PBXGroup;
 			children = (
-				30F8723A2E3BEA20006687F4 /* SignUpView.swift */,
 				BDAA3BC62E394C9E00494C8B /* CapstoneProjectSTEMquest */,
 				BDAA3BC52E394C9E00494C8B /* Products */,
 			);
@@ -125,7 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F8723B2E3BEA20006687F4 /* SignUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

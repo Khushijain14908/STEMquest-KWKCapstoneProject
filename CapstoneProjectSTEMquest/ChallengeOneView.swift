@@ -33,10 +33,10 @@ struct ChallengeOneView: View {
                 VStack(alignment: .leading, spacing: 20){
                     //basic info
                     Text("~ BALLOON CAR ~")
-                        .font(.title)
-                        .fontWeight(.bold)
+                        .font(.custom("American Typewriter", fixedSize: 34))
+                        .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 60)
+                        .padding(.horizontal, 32)
                         .foregroundColor(Color("Color1"))
 
                     Text("Total Project Time: 20-30 minutes")
@@ -50,9 +50,9 @@ struct ChallengeOneView: View {
                     
                     //materials below
                     Text("Materials")
-                        .font(.title2)
+                        .font(.custom("American Typewriter", fixedSize: 24))
                         .fontWeight(.semibold)
-                        .padding(.horizontal, 135)
+                        .padding(.horizontal, 125)
                         .foregroundColor(Color("Color1"))
 
                     Text("- Plastic bottles\n- Plastic bottle caps (4)\n- Flexible straws (3)\n- Wooden skewers (2)\n- Balloon\n- Rubber band\n- Tape\n- Scissors")
@@ -67,9 +67,9 @@ struct ChallengeOneView: View {
 
                     //instructions below
                     Text("Instructions")
-                        .font(.title2)
+                        .font(.custom("American Typewriter", fixedSize: 24))
                         .fontWeight(.semibold)
-                        .padding(.horizontal, 125)
+                        .padding(.horizontal, 110)
                         .foregroundColor(Color("Color1"))
 
                     HStack{
